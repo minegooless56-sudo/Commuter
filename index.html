@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Minimalis dengan Gambar</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+
+        .img-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+
+        .img-wrapper img {
+            width: 50%;
+            aspect-ratio: 4 / 3;
+        }
+
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+
+
+        .btn-red {
+            background: #dc2626;
+        }
+
+            .btn-red:hover {
+                background: #b91c1c;
+            }
+
+        .btn-lightblue {
+            background: #3b82f6;
+        }
+
+            .btn-lightblue:hover {
+                background: #2563eb;
+            }
+
+          
+
+        h2 {
+            margin-top: 0;
+            color: #1f2937;
+        }
+
+        p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        h6 {
+            color: #9ca3af;
+            font-style: italic;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h2>KRL Jogja-Solo</h2>
+            <div class="img-wrapper">
+                <img src="picture/KRL_INKA_EA202.jpg" alt="Foto KRL INKA">
+                <img src="picture/KRL_JR205-5.jpg" alt="Foto KRL JR205">
+            </div>
+            <p>KRL (Kereta Rel Listrik) adalah kereta yang menghubungkan 2 kota antara Jogja dan Solo.</p>
+            <p>Jadwal KRL Jogja Solo tersedia di bawah ini:</p>
+            <a href="picture/jadwal.pdf" target="_blank" class="btn btn-red">
+                Buka Jadwal PDF
+            </a>
+            <h6>Sumber : https://id.wikipedia.org/wiki/Commuter_Line_Yogyakarta</h6>
+        </div>
+
+        <div class="card">
+            <h2>Commuter Line Prameks</h2>
+            <img src="picture/Prameks_553.jpg" alt="Foto Commuter Line Prameks" style="margin-bottom: 20px;">
+            <p>Commuter line Prameks adalah kereta api yang menghubungkan antara stasiun Yogyakarta/Tugu dengan stasiun Kutoarjo.</p>
+            <p>Jadwal Commuter Line Prameks tersedia di bawah ini:</p>
+            <a href="picture/pramkesJ.pdf" target="_blank" class="btn btn-lightblue">
+                Buka Jadwal PDF
+            </a>
+            <h6>Sumber : https://id.wikipedia.org/wiki/Commuter_Line_Prambanan_Ekspres</h6>
+        </div>
+
+        <div class="card">
+            <h2>Peta rute Krl Jogja Solo dan Commuter Line Prameks</h2>
+            <img src="picture/map.png" alt="Foto Commuter Line Prameks" style="margin-bottom: 20px;">
+            <h6>Sumber : https://kci.id/perjalanan-krl/peta-rute</h6>
+        </div>
+
+
+
+    </div>    
+
+</body>
+</html>
